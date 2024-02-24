@@ -24,7 +24,7 @@ app.post('/api/capture', (req, res) => {
             console.error('Error:', err)
             return res.status(500).json({ message: 'Could not capture data'})
         }
-        res.json({ message: "Data collected." })
+        res.json({ message: "Data collected:", data })
     })
 })
 
