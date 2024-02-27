@@ -1,4 +1,4 @@
-# Security Policy for [Your Project Name]
+# Security Policy
 ## 1. Introduction
 
 This document outlines the security policy for [Your Project Name] repository. The aim is to ensure the integrity of the codebase while facilitating smooth development workflows for the project owner.
