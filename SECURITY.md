@@ -1,7 +1,9 @@
 # Security Policy
+
 ## 1. Introduction
 
-This document outlines the security policy for [Your Project Name] repository. The aim is to ensure the integrity of the codebase while facilitating smooth development workflows for the project owner.
+This document outlines the security policy for the ZuccerSucker repository. The aim is to ensure the integrity of the codebase while facilitating smooth development workflows for the project owner.
+
 ## 2. Repository Access
 
     Owner: G0dKing is the sole owner and maintainer of this repository.
@@ -23,7 +25,7 @@ This document outlines the security policy for [Your Project Name] repository. T
 
 ## 5. Handling Vulnerabilities
 
-    Reporting: If you discover a security issue, please report it directly to [Your Email/Contact Method], providing a detailed description of the problem.
+    Reporting: If you discover a security issue, please report it directly to [G0dKing, providing a detailed description of the problem.
     Response Plan: Upon receiving a security vulnerability report, the repository owner will assess the issue and respond within 48 hours with a plan for resolution.
 
 ## 6. Compliance
@@ -35,4 +37,4 @@ This document outlines the security policy for [Your Project Name] repository. T
 
 For any questions or concerns regarding this security policy, please contact:
 
-### https://github.com/G0dKing
+### <https://github.com/G0dKing>

