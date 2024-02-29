@@ -12,7 +12,7 @@
   <li>Node.js</li>
   <li>Node Package Manager (npm)</li>
 </ul>
-#### Linux/Windows/MacOS
+#### *Linux//Windows/MacOS*
 <p>1. Open a new terminal window and enter the following commands:</p>
 ```
 git clone https://github.com/G0dKing/darkwraith.git
