@@ -14,14 +14,13 @@
 </ul>
 #### Linux/Windows/MacOS
 <p>1. Open a new terminal window and enter the following commands:</p>
-
 ```
 git clone https://github.com/G0dKing/darkwraith.git
 cd darkwraith
 cd client && npm i && npm run build
 cd .. && npm i && npm run start
 ```
-<p> 2.Navigate to "hhtp://localhost:3001" in your browser to view the application.</p>
+<p>2. Navigate to "http://localhost:3001" in any browser to view the application.</p>
 
 ### USAGE
 <p>1. Deploy the Express.js server to the public internet. This can be done in one of several ways, including:</p>
