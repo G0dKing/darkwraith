@@ -11,7 +11,7 @@ export default defineConfig({
       plugins: [
         copy({
           targets: [
-            { src: 'static/viewdata.html', dest: 'dist' }
+            { src: 'static/*', dest: 'dist' }
           ],
           hook: 'writeBundle' // Ensures the files are copied after the bundle is written
         })
