@@ -1,12 +1,27 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import copy from 'rollup-plugin-copy';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+  ],
+  build: {
+    rollupOptions: {
+      plugins: [
+        copy({
+          targets: [
+            { src: 'static/viewdata.html', dest: 'dist' }
+          ],
+          hook: 'writeBundle' // Ensures the files are copied after the bundle is written
+        })
+      ]
+    }
+  },
   server: {
     proxy: {
       '/api': 'http://localhost:3001'
     }
   }
-})
+});
+
