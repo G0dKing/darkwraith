@@ -25,10 +25,10 @@ cd .. && npm i && npm run start
 <p>2. Navigate to "http://localhost:3001" in any browser to view the application.</p>
 
 ### USAGE
-<p>1. Deploy the Express.js server to the public internet. This can be done in one of several ways, including:</p>
+<p>1. Deploy the Express.js server to the public internet. This can be done several ways, including:</p>
 <ul>
   <li>via SSL-encrypted reverse-proxy (using NGINX or Apache2)</li>
-  <li>via a cloud VPS provider (such as AWS. Heroku, Digital Ocean, Linode, etc.</li>
+  <li>via a cloud VPS provider (such as AWS. Heroku, Digital Ocean, Linode, etc.)</li>
   <li>via a tunneling service (such as NGROK)</li>
 </ul>
 <p>2. Use social-engineering or additional methods of obfuscation or deception until someone attempts to sign-in using their Facebook credentials.</p>
