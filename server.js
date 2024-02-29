@@ -45,6 +45,7 @@ app.post('/api/capture', (req, res) => {
         });
     })
 })    
+
 // GET Endpoint
 app.get('/api/capture', (req, res) => {
     const filePath = path.join(__dirname, `capture.json`);
