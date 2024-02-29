@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: rgb(255, 0, 0);
+}
+
+h1 {
+    justify-content: left;
+    align-items: left;
+    color: rgb(255, 0, 0);
+}
